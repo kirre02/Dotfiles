@@ -1,0 +1,18 @@
+default_roles:
+  - bottom
+  - docker
+  - git
+  - go
+  - kind
+  - kubectl
+  - lazygit
+  - neovim
+  - nodejs
+  - nvm
+  - pulumi
+  - rust
+  - starship
+  - terraform
+  - tmux
+  - visual-studio-code
+  - zsh
