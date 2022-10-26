@@ -9,9 +9,9 @@ default_roles:
   - neovim
   - nodejs
   - nvm
+  - ssh
   - pulumi
-  - rust
-  - starship
+  - starship 
   - terraform
   - tmux
   - visual-studio-code
