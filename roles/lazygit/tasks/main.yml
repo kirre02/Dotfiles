@@ -1,4 +1,7 @@
 ---
-  - name: Install lazygit
-    shell: |
-      curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_0.35_Linux_x86_64.tar.gz"
+- name: Install lazygit
+  kewlfft.aur.aur:
+    use: yay
+    state: latest
+    name:
+      - lazygit
