@@ -5,12 +5,12 @@ DOTFILES_DIR="$HOME/.dotfiles"
 SSH_DIR="$HOME/.ssh"
 
 #install ansible
-if ![ -x "$(command -v ansible)" ]; then
+if ! [ -x "$(command -v ansible)" ]; then
  sudo pacman -S ansible --noconfirm 
 fi
 
 #generates ssh-keyes if there are non
-if ![[-f "$SSH_DIR/id_rsa"]]; then
+if ! [[-f "$SSH_DIR/id_rsa"]]; then
   mkdir -p "SSH_DIR"
 
   ssh-keygen -b 4096 -t rsa -f "SSH_DIR/id_rsa" -N "" -C "USER@$HOSTNAME"
@@ -21,7 +21,7 @@ if ![[-f "$SSH_DIR/id_rsa"]]; then
 fi
 
 #create repository
-cd "$DOTFILES_DIR"
+mkdir -p "$DOTFILES_DIR" && cd "$DOTFILES_DIR"
 
 #update ansible-galaxy
 ansible-galaxy install -r requirments.yml
