@@ -4,14 +4,14 @@ default_roles:
   - git
   - go
   - kind
+  - kitty
   - kubectl
   - lazygit
   - neovim
-  - nodejs
   - nvm
   - ssh
   - pulumi
-  - starship 
+  - starship
   - terraform
   - tmux
   - visual-studio-code
