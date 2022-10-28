@@ -31,7 +31,7 @@ fi
 mkdir -p "$DOTFILES_DIR" && cd "$DOTFILES_DIR"
 
 #update ansible-galaxy
-ansible-galaxy install -r requirments.yml
+ansible-galaxy install -r requierments.yml
 
 #runs ansible-playbook
 if [[ -f "$CONFIG_DIR/vault-password.txt" ]]; then
