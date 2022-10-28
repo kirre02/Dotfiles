@@ -1,12 +1,12 @@
 #!/bin/bash
 set -e
-ONFIG__DIR="$HOME/.config/dotfiles"
-DOTFILES_DIR="$HOME/dotfiles"
+CONFIG__DIR="$HOME/.config/dotfiles"
+DOTFILES_DIR="$HOME/.dotfiles"
 SSH_DIR="$HOME/.ssh"
 
 #install ansible
 if ![[ -x "$(command -v ansible)" ]]; then
- sudo apt install ansible
+ sudo pacman -S ansible --noconfirm 
 fi
 
 #generates ssh-keyes if there are non
@@ -22,7 +22,7 @@ fi
 
 # Clone repository
 if ! [[ -d "$DOTFILES_DIR" ]]; then
-  git clone "https://github.com/ALT-F4-LLC/dotfiles.git" "$DOTFILES_DIR"
+  git clone "https://github.com/kirre02/Dotfiles.git" "$DOTFILES_DIR"
 else
   git -C "$DOTFILES_DIR" pull
 fi
@@ -31,7 +31,7 @@ fi
 cd "$DOTFILES_DIR"
 
 #update ansible-galaxy
-ansible-galaxy install -r requirments.txt
+ansible-galaxy install -r requirments.yml
 
 #runs ansible-playbook
 if [[ -f "$CONFIG_DIR/vault-password.txt" ]]; then
