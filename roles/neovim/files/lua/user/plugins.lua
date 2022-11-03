@@ -41,7 +41,7 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
-  use { "wbthomason/packer.nvim", commit = "00ec5adef58c5ff9a07f11f45903b9dbbaa1b422" } -- Have packer manage itself
+  use { "wbthomason/packer.nvim", commit = "0cc1be6c7c74572c51065803d427d43919b1124b" } -- Have packer manage itself
   use { "nvim-lua/plenary.nvim", commit = "968a4b9afec0c633bc369662e78f8c5db0eba249" } -- Useful lua functions used by lots of plugins
   use { "windwp/nvim-autopairs", commit = "fa6876f832ea1b71801c4e481d8feca9a36215ec" } -- Autopairs, integrates with both cmp and treesitter
   use { "numToStr/Comment.nvim", commit = "2c26a00f32b190390b664e56e32fd5347613b9e2" }
@@ -80,15 +80,15 @@ return packer.startup(function(use)
   use { "jose-elias-alvarez/null-ls.nvim", commit = "ff40739e5be6581899b43385997e39eecdbf9465" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "c82e6d04f27a41d7fdcad9be0bce5bb59fcb78e5" }
   use { "folke/trouble.nvim", commit="929315ea5f146f1ce0e784c76c943ece6f36d786"}  
+  
   -- Telescope
-  use { "nvim-telescope/telescope.nvim", commit = "d96eaa914aab6cfc4adccb34af421bdd496468b0" }
+  use { "nvim-telescope/telescope.nvim", commit = "090b68754238560695809cd8f36ffa53124bbc6d" }
 
   -- Treesitter
-  use {
-    "nvim-treesitter/nvim-treesitter", commit = "518e27589c0463af15463c9d675c65e464efc2fe"}
+  use { "nvim-treesitter/nvim-treesitter", commit = "e7bdcee167ae41295a3e99ad460ae80d2bb961d7" }
 
   -- Git
-  use { "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" }
+  use { "lewis6991/gitsigns.nvim", commit = "d3a8ba0b0d34bbac482b963e52b346065169fa20" }
   use {"kdheepak/lazygit.nvim", commit = "9c73fd69a4c1cb3b3fc35b741ac968e331642600"}
   -- DAP
   use { "mfussenegger/nvim-dap", commit = "014ebd53612cfd42ac8c131e6cec7c194572f21d" }
