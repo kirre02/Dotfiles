@@ -1,4 +1,4 @@
-#Dotfiles
+# Dotfiles
 
 This is a fully automated dev environment for me
 
