@@ -11,7 +11,6 @@ default_roles:
   - nvm
   - ssh
   - pulumi
-  - starship
   - terraform
   - tmux
   - visual-studio-code
