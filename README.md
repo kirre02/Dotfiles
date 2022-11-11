@@ -1,6 +1,6 @@
 # Dotfiles
 
-This is a fully automated dev environment for me
+This project is meant to provide a fully automated dev environment that is easy to setup and maintain. 
 
 ## Goals
 
